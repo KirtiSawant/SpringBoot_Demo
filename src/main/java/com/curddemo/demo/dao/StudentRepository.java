@@ -11,12 +11,5 @@ import java.util.Map;
 
 @Repository
 public interface StudentRepository extends CrudRepository<Student,Integer> {
-
     List<Student> findAll();
-   /* @Query("select * from stud s where s.firstName=:firstName & s.lastName=:lastName")
-    List<Student>findByfirstNameAndlastName(String firstName,String lastName);
-
-    List<Student> findBylastName(String lastName);
-
-    List<Student> findByfirstNameAndlastName(String firstName);*/
 }
